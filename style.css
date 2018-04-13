@@ -1,0 +1,13 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("img/tlo.jpg");
+}
+
+#asd {
+    opacity: 0.4;
+    margin-top: 55px;
+    margin-left: 350px;
+}
