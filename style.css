@@ -4,10 +4,283 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-image: url("img/tlo.jpg");
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+/* -- Header -- */
+header {
+    text-align: center;
+    margin-top: 55px;
+    opacity: 0.4;
 }
 
-#asd {
-    opacity: 0.4;
-    margin-top: 55px;
-    margin-left: 350px;
+main {
+    max-width: 1050px;;
+    margin-left: 68px;
+    margin-right: 68px;
+}
+/* -- Box register form -- */
+section {
+    text-align: center;
+    width: 420px;
+}
+
+#registerForm {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 460px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contentRegisterForm {
+    background-color: white;
+    height: 420px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* -- Content register form -- */
+input#username {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
+input.username {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
+input.password {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
+input.email {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
+input.location {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
+input:focus {
+    border: 1px solid green;
+}
+
+input[type="submit"] {
+    background-color: rgb(141, 204, 40);
+    border: 1px solid rgb(59, 154, 0);
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    height: 45px;
+    margin-top: 15px;
+    width: 330px;
+}
+
+input[type="submit"]:active {
+    background-color: rgb(192,222,157);
+    border: 1px solid rgb(150, 204, 117)
+}
+
+label {
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    padding-left: 5px;
+}
+
+/* -- Send email -- */
+#sendEmail {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 530px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contentSendEmail {
+    background-color: white;
+    height: 490px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* -- Content send email -- */
+input.textarea {
+    box-sizing: border-box;
+    width: 330px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    height: 230px;
+}
+
+/* -- Sigin In Form -- */
+#siginInForm {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 260px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+      margin-bottom: 60px;
+}
+
+#contentSiginInForm {
+    background-color: white;
+    height: 215px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-align: center;
+}
+ 
+/* -- Content sigin in -- */
+input[type="submit"]#siginIn {
+    width: 140px;
+}
+
+/* -- Recover form -- */
+#recoverForm {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 260px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* -- Recover content form -- */
+#contentRevocerForm {
+    background-color: white;
+    height: 215px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-align: center;
+}
+
+#buttonSend {
+    width: 150px;
+    height: 40px;
+}
+
+#buttonDone {
+    width: 150px;
+    height: 40px;
+}
+
+/* -- Subscribe form -- */
+#subscribeForm {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 190px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* -- Subscribe  content form -- */
+#contentSubscribeForm {
+    background-color: white;
+    height: 155px;
+    width: 380px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-align: center;
+}
+
+input[type="submit"]#buttonSubscribe {
+    width: 145px;
+    height: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+input[type="submit"]#buttonNoSubscribe {
+    width: 145px;
+    height: 40px;
+    background-color: rgb(244, 75, 93);
+    border:1px solid  rgb(162, 32, 42);
+    margin-top: 25px;
 }
