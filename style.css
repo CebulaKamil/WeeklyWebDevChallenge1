@@ -8,6 +8,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
+
+section {
+    margin-left: 100px;
+}
+
+
 /* -- Header -- */
 header {
     text-align: center;
@@ -15,10 +21,22 @@ header {
     opacity: 0.4;
 }
 
+div#contentLeft {
+    box-sizing: border-box;
+    width: 50%;
+
+    float: left;
+    box-sizing: border-box;
+}
+
+div#contentRight {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
 main {
-    max-width: 1050px;;
-    margin-left: 68px;
-    margin-right: 68px;
+    text-align: center;
 }
 /* -- Box register form -- */
 section {
@@ -31,7 +49,7 @@ section {
     height: 460px;
     width: 420px;
     border-radius: 5px;
-    margin: 0px;
+    /*margin: 0px;*/
     padding: 0px;
     text-align: center;
     margin-bottom: 60px;
@@ -115,7 +133,8 @@ input.location {
     background-repeat: no-repeat;
 }
 
-input:focus {
+
+input:focus, input.phone:focus, input.textarea:focus {
     border: 1px solid green;
 }
 
@@ -190,7 +209,7 @@ input.textarea {
     margin: 0px;
     padding: 0px;
     text-align: center;
-      margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #contentSiginInForm {
@@ -235,9 +254,23 @@ input[type="submit"]#siginIn {
     text-align: center;
 }
 
+input.phone {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+    background-image: url("img/user.png");
+    background-position: 15px 10px;
+    background-repeat: no-repeat;
+}
+
 #buttonSend {
     width: 150px;
     height: 40px;
+    margin-right: 25px;
 }
 
 #buttonDone {
@@ -283,4 +316,8 @@ input[type="submit"]#buttonNoSubscribe {
     background-color: rgb(244, 75, 93);
     border:1px solid  rgb(162, 32, 42);
     margin-top: 25px;
+}
+
+img#logoBottom {
+    opacity: 0.4;
 }
