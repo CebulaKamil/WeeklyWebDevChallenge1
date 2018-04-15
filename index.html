@@ -27,14 +27,17 @@
                         <input type="password" placeholder="Confirm Password" class="password">
                         <input type="text" placeholder="Email" class="email">
                         <input type="text" placeholder="Your Location" class="location">  
-                        <input type="checkbox">
+                        <label for="checkbox">
+                                <input type="checkbox"  id="checkbox">
+                            <p>I have read and accept the terms of use.</p>
+                        </label>
                         <input type="submit" value="Sign up">
                     </form>
                 </div>
             </div>
         </section>
     <!-- Send Email -->
-    <section>    
+    <section>   
             <h1>Send Email</h1>
             <div id="sendEmail">
                 <div id="contentSendEmail">
@@ -42,10 +45,14 @@
                         <input type="text" placeholder="Your Name" class="username">
                         <input type="text" placeholder="Your Email" class="email">
                         <input type="text" placeholder="Type yor message ..." class="textarea">
+                        <label>
+                            <input type="checkbox">
+                            <p>Send a copy to my Email</p>
+                        </label>
                         <input type="submit" value="Send Email">
                     </form>
                 </div>
-            </div> 
+            </div>
     </section>
 </div>
     <!-- Sigin In Form -->
@@ -57,6 +64,10 @@
                     <form>
                         <input type="text" placeholder="Username" class="username">
                         <input type="password" placeholder="Password" class="password">
+                        <label>
+                            <input type="checkbox">
+                            <p>Remember me</p>
+                        </label>
                         <input type="submit" id="siginIn" value="Sigin in">
                     </form>
                 </div>
@@ -77,7 +88,7 @@
             </div>
     </section>
     <!-- Subscribe Form -->
-       <section>
+        <section>
             <h1>Subscribe Form</h1>
             <div id="subscribeForm">
                 <div id="contentSubscribeForm">
@@ -88,9 +99,8 @@
                     </form>
                 </div>
             </div> 
-        </section> 
+        </section>
             <img id="logoBottom" src="img/logoBottom.png">
-    </div>
     </main>
 </body>
 </html>

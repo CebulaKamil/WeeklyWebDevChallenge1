@@ -7,10 +7,12 @@ body {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+    margin: 0px;
+    padding: 0px;
 }
 
 section {
-    margin-left: 100px;
+   
 }
 
 
@@ -23,25 +25,32 @@ header {
 
 div#contentLeft {
     box-sizing: border-box;
-    width: 50%;
+    width: 420px;
 
     float: left;
     box-sizing: border-box;
 }
 
 div#contentRight {
-    float: left;
+    
     width: 50%;
     box-sizing: border-box;
+    width: 420px;
+    margin-left: auto;
 }
 
 main {
     text-align: center;
+    width: 940px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* -- Box register form -- */
 section {
     text-align: center;
     width: 420px;
+    
 }
 
 #registerForm {
@@ -49,10 +58,15 @@ section {
     height: 460px;
     width: 420px;
     border-radius: 5px;
-    /*margin: 0px;*/
+    margin: 0px;
     padding: 0px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+div#terms {
+    width: 380px;
+
 }
 
 #contentRegisterForm {
@@ -76,9 +90,8 @@ input#username {
     margin-top: 20px;
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png");
-    background-position: 15px 10px;
-    background-repeat: no-repeat;
+    background-image: url("img/user.png") no-repeat 15px, url ("img/solid.png") no-repeat 58px;
+   
 }
 
 input.username {
@@ -115,7 +128,7 @@ input.email {
     margin-top: 20px;
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png");
+    background-image: url("img/user.png"), url("img/solid.png");
     background-position: 15px 10px;
     background-repeat: no-repeat;
 }
@@ -132,7 +145,6 @@ input.location {
     background-position: 15px 10px;
     background-repeat: no-repeat;
 }
-
 
 input:focus, input.phone:focus, input.textarea:focus {
     border: 1px solid green;
@@ -154,16 +166,48 @@ input[type="submit"]:active {
     border: 1px solid rgb(150, 204, 117)
 }
 
-label {
-    color: rgb(175, 175, 175);
-    font-size: 16px;
+input[type="checkbox"] {
+    width: 25px;
+    height: 27px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("img/ramka.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
 }
 
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    padding-left: 5px;
+
+label {
+    font-size: 15px;
+    display: inline-block;
+    width: 330px;
+    box-sizing: border-box;
+    height: 27px;
+    margin-top: 10px;
+    
 }
+
+label > p {
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    height: 27;
+    padding-top: 5px;
+}
+
+
+
+input[type="checkbox"]:checked {
+    background-image: url("img/all.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
 
 /* -- Send email -- */
 #sendEmail {
@@ -191,7 +235,7 @@ input[type="checkbox"] {
 
 /* -- Content send email -- */
 input.textarea {
-    box-sizing: border-box;
+    
     width: 330px;
     height: 200px;
     margin-top: 20px;
