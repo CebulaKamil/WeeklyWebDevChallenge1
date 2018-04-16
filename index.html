@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>First Weekly WebDev Challenge </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 </head>
 <body>
     <!-- Header logo -->
@@ -27,8 +27,8 @@
                         <input type="password" placeholder="Confirm Password" class="password">
                         <input type="text" placeholder="Email" class="email">
                         <input type="text" placeholder="Your Location" class="location">  
-                        <label for="checkbox">
-                                <input type="checkbox"  id="checkbox">
+                        <label>
+                            <input type="checkbox"  id="checkbox">
                             <p>I have read and accept the terms of use.</p>
                         </label>
                         <input type="submit" value="Sign up">
@@ -64,7 +64,7 @@
                     <form>
                         <input type="text" placeholder="Username" class="username">
                         <input type="password" placeholder="Password" class="password">
-                        <label>
+                        <label id="checkboxSiginInForm">
                             <input type="checkbox">
                             <p>Remember me</p>
                         </label>
@@ -94,8 +94,10 @@
                 <div id="contentSubscribeForm">
                     <form>
                         <input type="text" placeholder="Enter your Email" class="email">
-                        <input type="submit" id="buttonSubscribe" value="Subscribe">
-                        <input type="submit" id="buttonNoSubscribe" value="No, Thanks">
+                        <div id="buttonSubscribeForm">
+                            <input type="submit" id="buttonSubscribe" value="Subscribe">
+                            <input type="submit" id="buttonNoSubscribe" value="No, Thanks">
+                        </div>
                     </form>
                 </div>
             </div> 

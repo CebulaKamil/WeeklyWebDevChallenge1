@@ -11,11 +11,6 @@ body {
     padding: 0px;
 }
 
-section {
-   
-}
-
-
 /* -- Header -- */
 header {
     text-align: center;
@@ -26,13 +21,11 @@ header {
 div#contentLeft {
     box-sizing: border-box;
     width: 420px;
-
     float: left;
     box-sizing: border-box;
 }
 
 div#contentRight {
-    
     width: 50%;
     box-sizing: border-box;
     width: 420px;
@@ -49,8 +42,7 @@ main {
 /* -- Box register form -- */
 section {
     text-align: center;
-    width: 420px;
-    
+    width: 420px; 
 }
 
 #registerForm {
@@ -62,11 +54,6 @@ section {
     padding: 0px;
     text-align: center;
     margin-bottom: 60px;
-}
-
-div#terms {
-    width: 380px;
-
 }
 
 #contentRegisterForm {
@@ -91,9 +78,17 @@ input#username {
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
     background-image: url("img/user.png") no-repeat 15px, url ("img/solid.png") no-repeat 58px;
-   
 }
 
+div#inputForm {
+    box-sizing: border-box;
+    width: 330px;
+    height: 40px;
+    padding-left: 50px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(198, 198, 198);
+}
 input.username {
     box-sizing: border-box;
     width: 330px;
@@ -178,7 +173,6 @@ input[type="checkbox"] {
     float: left;
 }
 
-
 label {
     font-size: 15px;
     display: inline-block;
@@ -195,19 +189,15 @@ label > p {
     padding: 0;
     height: 27;
     padding-top: 5px;
+    float: left;
+    margin-left: 10px;
 }
-
-
 
 input[type="checkbox"]:checked {
     background-image: url("img/all.png");
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
-
-
 
 /* -- Send email -- */
 #sendEmail {
@@ -235,13 +225,13 @@ input[type="checkbox"]:checked {
 
 /* -- Content send email -- */
 input.textarea {
-    
     width: 330px;
     height: 200px;
     margin-top: 20px;
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
     height: 230px;
+    box-sizing: border-box;
 }
 
 /* -- Sigin In Form -- */
@@ -254,6 +244,35 @@ input.textarea {
     padding: 0px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+div#icon {
+    background-image: url("img/solid.png");
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+label#checkboxSiginInForm > p {
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    height: 27;
+    padding-top: 5px;
+    float: left;
+    margin-left: 10px;
+}
+
+label#checkboxSiginInForm {
+    width: 165px;
+    font-size: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 27px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
 }
 
 #contentSiginInForm {
@@ -271,7 +290,11 @@ input.textarea {
 /* -- Content sigin in -- */
 input[type="submit"]#siginIn {
     width: 140px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
 }
+
 
 /* -- Recover form -- */
 #recoverForm {
@@ -347,11 +370,16 @@ input.phone {
     text-align: center;
 }
 
+div#buttonSubscribeForm {
+    width: 330px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
 input[type="submit"]#buttonSubscribe {
-    width: 145px;
+    width: 140px;
     height: 40px;
-    margin-right: 40px;
-    margin-top: 25px;
+    float: left;
 }
 
 input[type="submit"]#buttonNoSubscribe {
@@ -359,7 +387,7 @@ input[type="submit"]#buttonNoSubscribe {
     height: 40px;
     background-color: rgb(244, 75, 93);
     border:1px solid  rgb(162, 32, 42);
-    margin-top: 25px;
+    float: right;
 }
 
 img#logoBottom {
