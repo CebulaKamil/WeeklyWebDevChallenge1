@@ -69,37 +69,100 @@ section {
 }
 
 /* -- Content register form -- */
-input#username {
+div.input-row {
     box-sizing: border-box;
-    width: 330px;
-    height: 40px;
-    padding-left: 50px;
-    margin-top: 20px;
-    border-radius: 3px;
+    width: 340px;
+    height: 41px;
     border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png") no-repeat 15px, url ("img/solid.png") no-repeat 58px;
+    border-radius: 3px;
+    margin-left: 20px;
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+    box-shadow: inset 0px -20px 40px -40px rgba(0,0,0,0.75);
 }
 
-div#inputForm {
-    box-sizing: border-box;
-    width: 330px;
-    height: 40px;
-    padding-left: 50px;
-    margin-top: 20px;
-    border-radius: 3px;
-    border: 1px solid rgb(198, 198, 198);
+div.input-row:focus-within {
+    border: 1px solid green;
 }
-input.username {
-    box-sizing: border-box;
-    width: 330px;
+
+div.solidIcons {
+    width: 2px;
     height: 40px;
-    padding-left: 50px;
-    margin-top: 20px;
-    border-radius: 3px;
-    border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png");
-    background-position: 15px 10px;
+    background-image: url("img/solid.png");
+    background-position: center;
     background-repeat: no-repeat;
+    float: left;
+}
+
+div.iconUser {
+    width: 60px;
+    height: 40px;
+    background-image: url("img/user.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+div.iconPhone {
+    width: 60px;
+    height: 40px;
+    background-image: url("img/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+div.iconLocation {
+    width: 60px;
+    height: 40px;
+    background-image: url("img/location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+div.iconEmail {
+    width: 60px;
+    height: 40px;
+    background-image: url("img/email.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+div.iconLock {
+    width: 60px;
+    height: 40px;
+    background-image: url("img/lock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+input[type="text"], input[type="password"] {
+    height: 30px;
+    width: 270px;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 30px;
+    margin-top: 5px;
+    box-shadow: inset 0px -20px 40px -40px rgba(0,0,0,0.75);
 }
 
 input.password {
@@ -123,25 +186,12 @@ input.email {
     margin-top: 20px;
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png"), url("img/solid.png");
+    background-image: url("img/user.png") ;
     background-position: 15px 10px;
     background-repeat: no-repeat;
 }
 
-input.location {
-    box-sizing: border-box;
-    width: 330px;
-    height: 40px;
-    padding-left: 50px;
-    margin-top: 20px;
-    border-radius: 3px;
-    border: 1px solid rgb(198, 198, 198);
-    background-image: url("img/user.png");
-    background-position: 15px 10px;
-    background-repeat: no-repeat;
-}
-
-input:focus, input.phone:focus, input.textarea:focus {
+input.textarea:focus {
     border: 1px solid green;
 }
 
@@ -153,12 +203,31 @@ input[type="submit"] {
     font-size: 20px;
     height: 45px;
     margin-top: 15px;
-    width: 330px;
+    width: 340px;
 }
+
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;    
+    background-image: url("img/dropDown.png");  
+    background-repeat: no-repeat;
+    background-position: right;
+ }
 
 input[type="submit"]:active {
     background-color: rgb(192,222,157);
     border: 1px solid rgb(150, 204, 117)
+}
+
+.location {
+height: 30px;
+width: 270px;
+box-sizing: border-box;
+border: none;
+padding-left: 30px;
+margin-top: 5px;
+box-shadow: inset 0px -20px 40px -40px rgba(0,0,0,0.75);
 }
 
 input[type="checkbox"] {
@@ -176,11 +245,12 @@ input[type="checkbox"] {
 label {
     font-size: 15px;
     display: inline-block;
-    width: 330px;
+    width: 340px;
     box-sizing: border-box;
     height: 27px;
     margin-top: 10px;
-    
+    float: left;
+    margin-left: 15px;
 }
 
 label > p {
@@ -224,14 +294,18 @@ input[type="checkbox"]:checked {
 }
 
 /* -- Content send email -- */
-input.textarea {
-    width: 330px;
+.textarea {
+    width: 340px;
     height: 200px;
     margin-top: 20px;
     border-radius: 3px;
     border: 1px solid rgb(198, 198, 198);
     height: 230px;
     box-sizing: border-box;
+    justify-content: right;
+    box-shadow: inset 0px -20px 43px -40px rgba(0,0,0,0.75);
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 /* -- Sigin In Form -- */
@@ -258,9 +332,13 @@ label#checkboxSiginInForm > p {
     margin: 0;
     padding: 0;
     height: 27;
-    padding-top: 5px;
     float: left;
     margin-left: 10px;
+}
+
+label#checkboxSiginInForm > input {
+    margin: 0px;
+    padding: 0px;
 }
 
 label#checkboxSiginInForm {
@@ -271,8 +349,9 @@ label#checkboxSiginInForm {
     height: 27px;
     margin-top: 10px;
     float: left;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 5px;
 }
 
 #contentSiginInForm {
@@ -281,7 +360,7 @@ label#checkboxSiginInForm {
     width: 380px;
     border-radius: 5px;
     position: relative;
-    top: 20px;
+    top: 23px;
     left: 20px;
     color: black;
     text-align: center;
@@ -289,7 +368,7 @@ label#checkboxSiginInForm {
  
 /* -- Content sigin in -- */
 input[type="submit"]#siginIn {
-    width: 140px;
+    width: 150px;
     margin: 0px;
     padding: 0px;
     margin-top: 20px;
@@ -315,7 +394,7 @@ input[type="submit"]#siginIn {
     width: 380px;
     border-radius: 5px;
     position: relative;
-    top: 20px;
+    top: 23px;
     left: 20px;
     color: black;
     text-align: center;
@@ -333,11 +412,18 @@ input.phone {
     background-position: 15px 10px;
     background-repeat: no-repeat;
 }
+#buttonRecoverForm {
+    width: 340px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
 
 #buttonSend {
     width: 150px;
     height: 40px;
-    margin-right: 25px;
+    margin-right: 33px;
+    
 }
 
 #buttonDone {
@@ -348,7 +434,7 @@ input.phone {
 /* -- Subscribe form -- */
 #subscribeForm {
     background-color: rgba(0, 0, 0, 0.3);
-    height: 190px;
+    height: 195px;
     width: 420px;
     border-radius: 5px;
     margin: 0px;
@@ -371,8 +457,8 @@ input.phone {
 }
 
 div#buttonSubscribeForm {
-    width: 330px;
-    margin-left: 25px;
+    width: 340px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 

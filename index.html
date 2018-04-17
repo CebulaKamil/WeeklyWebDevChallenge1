@@ -22,13 +22,40 @@
             <div id="registerForm">
                 <div id="contentRegisterForm">
                     <form>
-                        <input type="text" placeholder="Username" class="username">
-                        <input type="password" placeholder="Password" class="password">
-                        <input type="password" placeholder="Confirm Password" class="password">
-                        <input type="text" placeholder="Email" class="email">
-                        <input type="text" placeholder="Your Location" class="location">  
+                        <div class="input-row">
+                            <div class="iconUser"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-row">
+                            <div class="iconLock"></div>
+                            <div class="solidIcons"></div>
+                            <input type="password" placeholder="Password">
+                         </div>
+                         <div class="input-row">
+                            <div class="iconLock"></div>
+                            <div class="solidIcons"></div>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                        <div class="input-row">
+                            <div class="iconEmail"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-row">
+                            <div class="iconLocation"></div>
+                            <div class="solidIcons"></div>
+                            <select class="location" name="location" placeholder="Your Location">
+                                <option value="">Your Location</option>
+                                <option value="Europe">Europe</option>
+                                <option value="United States">Unitet States</option>
+                                <option value="China">China</option>
+                                <option value="Africa">Africa</option>
+
+                            </select>
+                        </div>
                         <label>
-                            <input type="checkbox"  id="checkbox">
+                            <input type="checkbox" id="checkbox">
                             <p>I have read and accept the terms of use.</p>
                         </label>
                         <input type="submit" value="Sign up">
@@ -42,9 +69,17 @@
             <div id="sendEmail">
                 <div id="contentSendEmail">
                     <form>
-                        <input type="text" placeholder="Your Name" class="username">
-                        <input type="text" placeholder="Your Email" class="email">
-                        <input type="text" placeholder="Type yor message ..." class="textarea">
+                         <div class="input-row">
+                            <div class="iconUser"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Your Name">
+                        </div>  
+                        <div class="input-row">
+                            <div class="iconEmail"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Your Email">
+                        </div>   
+                        <textarea class="textarea" placeholder="Type your message..."></textarea>
                         <label>
                             <input type="checkbox">
                             <p>Send a copy to my Email</p>
@@ -62,8 +97,16 @@
             <div id="siginInForm">
                 <div id="contentSiginInForm">
                     <form>
-                        <input type="text" placeholder="Username" class="username">
-                        <input type="password" placeholder="Password" class="password">
+                        <div class="input-row">
+                            <div class="iconUser"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-row">
+                             <div class="iconLock"></div>
+                             <div class="solidIcons"></div>
+                             <input type="password" placeholder="Password">
+                         </div>
                         <label id="checkboxSiginInForm">
                             <input type="checkbox">
                             <p>Remember me</p>
@@ -79,10 +122,20 @@
             <div id="recoverForm">
                 <div id="contentRevocerForm">
                     <form>
-                        <input type="text" placeholder="Enter you Email" class="email">
-                        <input type="text" placeholder="Enter your Phone number" class="phone">
-                        <input type="submit" id="buttonSend" value="Send">
-                        <input type="submit" id="buttonDone" value="Done">
+                        <div class="input-row">
+                            <div class="iconEmail"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Enter your Email">
+                        </div>
+                        <div class="input-row">
+                            <div class="iconPhone"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Enter your Phone number">
+                        </div>
+                        <div id="buttonRecoverForm">
+                            <input type="submit" id="buttonSend" value="Send">
+                            <input type="submit" id="buttonDone" value="Done">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -93,7 +146,11 @@
             <div id="subscribeForm">
                 <div id="contentSubscribeForm">
                     <form>
-                        <input type="text" placeholder="Enter your Email" class="email">
+                        <div class="input-row">
+                            <div class="iconEmail"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Enter your Email">
+                        </div>
                         <div id="buttonSubscribeForm">
                             <input type="submit" id="buttonSubscribe" value="Subscribe">
                             <input type="submit" id="buttonNoSubscribe" value="No, Thanks">
