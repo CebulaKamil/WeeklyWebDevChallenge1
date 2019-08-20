@@ -20,51 +20,74 @@
 
         <!-- Register Form -->
         <section class="section page__section">
+
             <h1 class="section__title">Register Form</h1>
+
             <div class="section-content">
+
                 <form class="section-content__form">
 
+                    <!-- User name input -->
                     <div class="input-row">
                         <div class="input-row__icon">
-                            <img src="img/user.png" alt="User icon">
+                            <img class="input-row__icon-img" src="img/user.png" alt="User icon">
                         </div>
                         <input class="input-row__area" type="text" placeholder="Username">
                     </div>
 
+                    <!-- Password input -->
                     <div class="input-row">
                         <div class="input-row__icon">
-                            <img src="img/lock.png" alt="Lock icon">
+                            <img class="input-row__icon-img" src="img/lock.png" alt="Lock icon">
                         </div>
                         <input class="input-row__area" type="password" placeholder="Password">
                     </div>
+
+                    <!-- Confirm password input -->
                     <div class="input-row">
-                        <div class="iconLock"></div>
-                        <div class="solidIcons"></div>
+                        <div class="input-row__icon">
+                            <img class="input-row__icon-img" src="img/lock.png" alt="Lock icon">
+                        </div>
                         <input class="input-row__area" type="password" placeholder="Confirm Password">
                     </div>
+
+                    <!-- Email adress input -->
                     <div class="input-row">
-                        <div class="iconEmail"></div>
-                        <div class="solidIcons"></div>
+                        <div class="input-row__icon">
+                            <img class="input-row__icon-img" src="img/email.png" alt="Email icon">
+                        </div>
                         <input class="input-row__area" type="text" placeholder="Email">
                     </div>
+
+                    <!-- Location input -->
                     <div class="input-row">
-                        <div class="iconLocation"></div>
-                        <div class="solidIcons"></div>
+                        <div class="input-row__icon">
+                            <img class="input-row__icon-img" src="img/location.png" alt="Location icon">
+                        </div>
+                        <!-- Location options -->
                         <select class="input-row__area" name="location" placeholder="Your Location">
-                            <option value="">Your Location</option>
+                            <option class="input-row__option" value="">Your Location</option>
                             <option value="Europe">Europe</option>
                             <option value="United States">Unitet States</option>
                             <option value="China">China</option>
                             <option value="Africa">Africa</option>
                         </select>
                     </div>
-                    <div class="input-row">
-                        <input type="checkbox" id="terms-checkbox">
-                        <label for="terms-checkbox">I have read and accept the terms of use.</label>
+
+                    <!-- Terms row -->
+                    <div class="terms-row">
+                        <input class="terms-row__checkbox" type="checkbox" id="terms-checkbox">
+                        <label class="terms-row__label" for="terms-checkbox">I have read and accept the terms of
+                            use.</label>
                     </div>
+
+                    <!-- Submit button -->
                     <input class="section-content__btn" type="submit" value="Sign up">
+
                 </form>
+
             </div>
+
         </section>
 
 
