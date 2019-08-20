@@ -21,4 +21,58 @@ body {
 .header__img {
   width: 100%;
 }
+
+/* --- Section --- */
+.section__title {
+  color: white;
+  font-family: arial;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.section-content {
+  background-color: white;
+  -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.section-content__btn {
+  width: 100%;
+  border: 1px solid #3b9a00;
+  padding: 5px 0;
+  color: white;
+  font-family: arial;
+  font-weight: normal;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3d840), to(#7ec31f));
+  background: linear-gradient(#a3d840, #7ec31f);
+}
+
+.section-content__btn:active {
+  border: none;
+}
+
+/* --- input --- */
+.input-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 41px;
+  border: 1px solid #c6c6c6;
+  padding: 6px 0 6px 0;
+}
+
+.input-row__icon {
+  width: 45px;
+  text-align: center;
+  padding: 0 5px 0 5px;
+  border-right: 1px solid #c6c6c6;
+}
+
+.input-row__area {
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */

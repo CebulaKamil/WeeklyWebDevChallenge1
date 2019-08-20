@@ -12,159 +12,158 @@
 
 <body>
     <div class="page">
+
         <!-- Header logo -->
         <header class="header page__header">
             <img class="header__img" src="img/logo.png" alt="Top logo">
         </header>
-        <!-- Main content -->
-        <main>
-            <!-- Register Form -->
-            <div id="contentLeft">
-                <section>
-                    <h1>Register Form</h1>
-                    <div id="registerForm">
-                        <div id="contentRegisterForm">
-                            <form>
-                                <div class="input-row">
-                                    <div class="iconUser"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Username">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconLock"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="password" placeholder="Password">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconLock"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="password" placeholder="Confirm Password">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconEmail"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconLocation"></div>
-                                    <div class="solidIcons"></div>
-                                    <select class="location" name="location" placeholder="Your Location">
-                                        <option value="">Your Location</option>
-                                        <option value="Europe">Europe</option>
-                                        <option value="United States">Unitet States</option>
-                                        <option value="China">China</option>
-                                        <option value="Africa">Africa</option>
 
-                                    </select>
-                                </div>
-                                <label>
-                                    <input type="checkbox" id="checkbox">
-                                    <p>I have read and accept the terms of use.</p>
-                                </label>
-                                <input type="submit" value="Sign up">
-                            </form>
+        <!-- Register Form -->
+        <section class="section page__section">
+            <h1 class="section__title">Register Form</h1>
+            <div class="section-content">
+                <form class="section-content__form">
+
+                    <div class="input-row">
+                        <div class="input-row__icon">
+                            <img src="img/user.png" alt="User icon">
                         </div>
+                        <input class="input-row__area" type="text" placeholder="Username">
                     </div>
-                </section>
-                <!-- Send Email -->
-                <section>
-                    <h1>Send Email</h1>
-                    <div id="sendEmail">
-                        <div id="contentSendEmail">
-                            <form>
-                                <div class="input-row">
-                                    <div class="iconUser"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Your Name">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconEmail"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Your Email">
-                                </div>
-                                <textarea class="textarea" placeholder="Type your message..."></textarea>
-                                <label>
-                                    <input type="checkbox">
-                                    <p>Send a copy to my Email</p>
-                                </label>
-                                <input type="submit" value="Send Email">
-                            </form>
+
+                    <div class="input-row">
+                        <div class="input-row__icon">
+                            <img src="img/lock.png" alt="Lock icon">
                         </div>
+                        <input class="input-row__area" type="password" placeholder="Password">
                     </div>
-                </section>
+                    <div class="input-row">
+                        <div class="iconLock"></div>
+                        <div class="solidIcons"></div>
+                        <input class="input-row__area" type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="input-row">
+                        <div class="iconEmail"></div>
+                        <div class="solidIcons"></div>
+                        <input class="input-row__area" type="text" placeholder="Email">
+                    </div>
+                    <div class="input-row">
+                        <div class="iconLocation"></div>
+                        <div class="solidIcons"></div>
+                        <select class="input-row__area" name="location" placeholder="Your Location">
+                            <option value="">Your Location</option>
+                            <option value="Europe">Europe</option>
+                            <option value="United States">Unitet States</option>
+                            <option value="China">China</option>
+                            <option value="Africa">Africa</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <input type="checkbox" id="terms-checkbox">
+                        <label for="terms-checkbox">I have read and accept the terms of use.</label>
+                    </div>
+                    <input class="section-content__btn" type="submit" value="Sign up">
+                </form>
             </div>
-            <!-- Sigin In Form -->
-            <div id="contentRight">
-                <section>
-                    <h1>Sigin In Form</h1>
-                    <div id="siginInForm">
-                        <div id="contentSiginInForm">
-                            <form>
-                                <div class="input-row">
-                                    <div class="iconUser"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Username">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconLock"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="password" placeholder="Password">
-                                </div>
-                                <label id="checkboxSiginInForm">
-                                    <input type="checkbox">
-                                    <p>Remember me</p>
-                                </label>
-                                <input type="submit" id="siginIn" value="Sigin in">
-                            </form>
+        </section>
+
+
+        <!-- Send Email -->
+        <section>
+            <h1>Send Email</h1>
+            <div id="sendEmail">
+                <div id="contentSendEmail">
+                    <form>
+                        <div class="input-row">
+                            <div class="iconUser"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Your Name">
                         </div>
-                    </div>
-                </section>
-                <!-- Recover Form -->
-                <section>
-                    <h1>Recover Form</h1>
-                    <div id="recoverForm">
-                        <div id="contentRevocerForm">
-                            <form>
-                                <div class="input-row">
-                                    <div class="iconEmail"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Enter your Email">
-                                </div>
-                                <div class="input-row">
-                                    <div class="iconPhone"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Enter your Phone number">
-                                </div>
-                                <div id="buttonRecoverForm">
-                                    <input type="submit" id="buttonSend" value="Send">
-                                    <input type="submit" id="buttonDone" value="Done">
-                                </div>
-                            </form>
+                        <div class="input-row">
+                            <div class="iconEmail"></div>
+                            <div class="solidIcons"></div>
+                            <input type="text" placeholder="Your Email">
                         </div>
-                    </div>
-                </section>
-                <!-- Subscribe Form -->
-                <section>
-                    <h1>Subscribe Form</h1>
-                    <div id="subscribeForm">
-                        <div id="contentSubscribeForm">
-                            <form>
-                                <div class="input-row">
-                                    <div class="iconEmail"></div>
-                                    <div class="solidIcons"></div>
-                                    <input type="text" placeholder="Enter your Email">
-                                </div>
-                                <div id="buttonSubscribeForm">
-                                    <input type="submit" id="buttonSubscribe" value="Subscribe">
-                                    <input type="submit" id="buttonNoSubscribe" value="No, Thanks">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-                <!-- <img id="logoBottom" src="img/logoBottom.png"> -->
-        </main>
+                        <textarea class="textarea" placeholder="Type your message..."></textarea>
+                        <label>
+                            <input type="checkbox">
+                            <p>Send a copy to my Email</p>
+                        </label>
+                        <input type="submit" value="Send Email">
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
+    <!-- Sigin In Form -->
+    <section>
+        <h1>Sigin In Form</h1>
+        <div id="siginInForm">
+            <div id="contentSiginInForm">
+                <form>
+                    <div class="input-row">
+                        <div class="iconUser"></div>
+                        <div class="solidIcons"></div>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-row">
+                        <div class="iconLock"></div>
+                        <div class="solidIcons"></div>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <label id="checkboxSiginInForm">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </label>
+                    <input type="submit" id="siginIn" value="Sigin in">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Recover Form -->
+    <section>
+        <h1>Recover Form</h1>
+        <div id="recoverForm">
+            <div id="contentRevocerForm">
+                <form>
+                    <div class="input-row">
+                        <div class="iconEmail"></div>
+                        <div class="solidIcons"></div>
+                        <input type="text" placeholder="Enter your Email">
+                    </div>
+                    <div class="input-row">
+                        <div class="iconPhone"></div>
+                        <div class="solidIcons"></div>
+                        <input type="text" placeholder="Enter your Phone number">
+                    </div>
+                    <div id="buttonRecoverForm">
+                        <input type="submit" id="buttonSend" value="Send">
+                        <input type="submit" id="buttonDone" value="Done">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe Form -->
+    <section>
+        <h1>Subscribe Form</h1>
+        <div id="subscribeForm">
+            <div id="contentSubscribeForm">
+                <form>
+                    <div class="input-row">
+                        <div class="iconEmail"></div>
+                        <div class="solidIcons"></div>
+                        <input type="text" placeholder="Enter your Email">
+                    </div>
+                    <div id="buttonSubscribeForm">
+                        <input type="submit" id="buttonSubscribe" value="Subscribe">
+                        <input type="submit" id="buttonNoSubscribe" value="No, Thanks">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <img id="logoBottom" src="img/logoBottom.png"> -->
 </body>
 
 </html>
