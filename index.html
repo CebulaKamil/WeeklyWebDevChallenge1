@@ -27,45 +27,45 @@
 
                 <form class="section-content__form">
 
-                    <!-- User name input -->
+                    <!-- register-form__user-name-->
                     <div class="input-row">
                         <div class="input-row__icon">
                             <img class="input-row__icon-img" src="img/user.png" alt="User icon">
                         </div>
-                        <input class="input-row__area" type="text" placeholder="Username">
+                        <input class="input-row__input" type="text" placeholder="Username">
                     </div>
 
-                    <!-- Password input -->
+                    <!-- register-form__user-password -->
                     <div class="input-row">
                         <div class="input-row__icon">
                             <img class="input-row__icon-img" src="img/lock.png" alt="Lock icon">
                         </div>
-                        <input class="input-row__area" type="password" placeholder="Password">
+                        <input class="input-row__input" type="password" placeholder="Password">
                     </div>
 
-                    <!-- Confirm password input -->
+                    <!-- register-form__user-repassword -->
                     <div class="input-row">
                         <div class="input-row__icon">
                             <img class="input-row__icon-img" src="img/lock.png" alt="Lock icon">
                         </div>
-                        <input class="input-row__area" type="password" placeholder="Confirm Password">
+                        <input class="input-row__input" type="password" placeholder="Confirm Password">
                     </div>
 
-                    <!-- Email adress input -->
+                    <!-- register-form__user-email -->
                     <div class="input-row">
                         <div class="input-row__icon">
                             <img class="input-row__icon-img" src="img/email.png" alt="Email icon">
                         </div>
-                        <input class="input-row__area" type="text" placeholder="Email">
+                        <input class="input-row__input" type="text" placeholder="Email">
                     </div>
 
-                    <!-- Location input -->
+                    <!-- register-form__user-location -->
                     <div class="input-row">
                         <div class="input-row__icon">
                             <img class="input-row__icon-img" src="img/location.png" alt="Location icon">
                         </div>
-                        <!-- Location options -->
-                        <select class="input-row__area" name="location" placeholder="Your Location">
+                        <!-- register-form__location-option -->
+                        <select class="input-row__input" name="location" placeholder="Your Location">
                             <option class="input-row__option" value="">Your Location</option>
                             <option value="Europe">Europe</option>
                             <option value="United States">Unitet States</option>
@@ -74,14 +74,14 @@
                         </select>
                     </div>
 
-                    <!-- Terms row -->
+                    <!-- register-form__terms -->
                     <div class="terms-row">
                         <input class="terms-row__checkbox" type="checkbox" id="terms-checkbox">
                         <label class="terms-row__label" for="terms-checkbox">I have read and accept the terms of
                             use.</label>
                     </div>
 
-                    <!-- Submit button -->
+                    <!-- register-form__submit -->
                     <input class="section-content__btn" type="submit" value="Sign up">
 
                 </form>
@@ -92,32 +92,51 @@
 
 
         <!-- Send Email -->
-        <section>
-            <h1>Send Email</h1>
-            <div id="sendEmail">
-                <div id="contentSendEmail">
-                    <form>
-                        <div class="input-row">
-                            <div class="iconUser"></div>
-                            <div class="solidIcons"></div>
-                            <input type="text" placeholder="Your Name">
+        <section class="section page__section">
+
+            <h1 class="section__title">Send Email</h1>
+
+            <div class="section-content">
+
+                <form class="section-content__form">
+
+                    <!-- send-email__user-name -->
+                    <div class="input-row">
+                        <div class="input-row__icon">
+                            <img class="input-row__icon-img" src="img/user.png" alt="User icon">
                         </div>
-                        <div class="input-row">
-                            <div class="iconEmail"></div>
-                            <div class="solidIcons"></div>
-                            <input type="text" placeholder="Your Email">
+                        <input class="input-row__input" type="text" placeholder="Your Name">
+                    </div>
+
+                    <!-- send-email__user-email -->
+                    <div class="input-row">
+                        <div class="input-row__icon">
+                            <img class="input-row__icon-img" src="img/email.png" alt="User icon">
                         </div>
-                        <textarea class="textarea" placeholder="Type your message..."></textarea>
-                        <label>
-                            <input type="checkbox">
-                            <p>Send a copy to my Email</p>
-                        </label>
-                        <input type="submit" value="Send Email">
-                    </form>
-                </div>
+                        <input class="input-row__input" type="text" placeholder="Your Email">
+                    </div>
+
+                    <!-- send-email__textarea -->
+                    <textarea class="input-row__textarea" placeholder="Type your message..."></textarea>
+
+                    <!-- sent-email__ -->
+                    <div class="terms-row">
+                        <input class="terms-row__checkbox" type="checkbox" id="send-copy-email-to-my">
+                        <label class="terms-row__label" for="send-copy-email-to-my">Send a copy to my Email.</label>
+                    </div>
+
+                    <!-- sent-email__btn -->
+                    <input class="section-content__btn" type="submit" value="Send Email">
+
+                </form>
+
             </div>
+
         </section>
+
     </div>
+
+
     <!-- Sigin In Form -->
     <section>
         <h1>Sigin In Form</h1>

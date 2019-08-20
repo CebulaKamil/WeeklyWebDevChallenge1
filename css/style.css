@@ -25,6 +25,7 @@ body {
 /* --- Section --- */
 .section {
   max-width: 382px;
+  margin-top: 50px;
 }
 
 .section__title {
@@ -86,7 +87,7 @@ body {
   text-align: center;
 }
 
-.input-row__area {
+.input-row__input {
   width: 100%;
   padding-left: 10px;
   border: 1px solid transparent;
@@ -95,7 +96,23 @@ body {
   transition: 0.4s;
 }
 
-.input-row__area:focus {
+.input-row__input:focus {
+  border: 1px solid black;
+}
+
+.input-row__textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 230px;
+  max-height: 230px;
+  padding: 10px 0 0 10px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input-row__textarea:focus {
   border: 1px solid black;
 }
 

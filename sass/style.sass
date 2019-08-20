@@ -23,6 +23,7 @@ body
 /* --- Section --- */ 
 .section 
     max-width: 382px
+    margin-top: 50px
 
     &__title 
         color: white
@@ -81,7 +82,7 @@ body
         text-align: center
     
 
-    &__area 
+    &__input 
         // Size
         width: 100%
         padding-left: 10px
@@ -90,8 +91,22 @@ body
         outline: none
         transition: 0.4s
 
-
         &:focus
+            border: 1px solid black
+    
+    &__textarea 
+        // Size
+        min-width: 100%
+        max-width: 100%
+        min-height: 230px
+        max-height: 230px
+        padding: 10px 0 0 10px
+        border: 1px solid #c6c6c6
+
+        outline: none
+        transition: 0.2s
+
+        &:focus 
             border: 1px solid black
         
 
